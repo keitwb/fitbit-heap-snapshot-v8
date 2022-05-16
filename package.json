@@ -1,0 +1,35 @@
+{
+  "name": "fitbit-heap-snapshot-v8",
+  "version": "0.1.0",
+  "description": "Tool to convert the Fitbit jerryscript-1 heap snapshot to a Chrome Dev Tools (v8) compatible heap snapshot",
+  "files": [
+    "/lib/**/!(*.test|*.spec).{js,d.ts}"
+  ],
+  "author": "Ben Keith <keitwb@gmail.com>",
+  "license": "Apache-2",
+  "repository": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib tsconfig.tsbuildinfo && tsc -b",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "@fitbit/app-package": "^1.7.3",
+    "@fitbit/fdb-protocol": "^1.8.0-pre.0",
+    "@fitbit/jsonrpc-ts": "^3.2.1",
+    "cbor": "^5.1.0",
+    "fp-ts": "2.8.2",
+    "io-ts": "2.2.10",
+    "jszip": "^3.5.0",
+    "tslib": "^2.0.1",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "@types/cbor": "^5.0.1",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^14.6.0",
+    "@types/source-map": "^0.5.7",
+    "@types/yargs": "^15.0.5"
+  }
+}
