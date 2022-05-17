@@ -196,6 +196,17 @@ export const RawEdge = t.interface(
 );
 export type RawEdge = t.TypeOf<typeof RawEdge>;
 
+export interface GraphNodeAttributes {
+  name: string;
+  type: t.TypeOf<typeof NodeTypes>;
+  memory_size: number | null;
+}
+
+export interface GraphEdgeAttributes {
+  name: string | null;
+  type: t.TypeOf<typeof EdgeTypes>;
+}
+
 export type ChromeDevNode = [
   typ: t.TypeOf<typeof NodeTypes>,
   name: string,

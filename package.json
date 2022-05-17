@@ -20,6 +20,8 @@
     "@fitbit/jsonrpc-ts": "^3.2.1",
     "cbor": "^5.1.0",
     "fp-ts": "2.8.2",
+    "graphology": "^0.24.1",
+    "graphology-gexf": "^0.10.2",
     "io-ts": "2.2.10",
     "jszip": "^3.5.0",
     "tslib": "^2.0.1",

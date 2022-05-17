@@ -1,1 +1,1 @@
-export { default as convert } from './convert';
+export { generateGraph as convert } from './convert';
